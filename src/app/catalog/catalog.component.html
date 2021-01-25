@@ -1,0 +1,46 @@
+<app-add-product-form (onAddProduct)="getProducts()"></app-add-product-form>
+
+<!-- <div class="container form-inline">
+  <label for="sort">Сортировка</label>
+  <select name="sort" id="sort" class="form-control ml-4" [(ngModel)]="sortParam">
+    <option value="" selected>Default</option>
+    <option value="price1">по алфавиту</option>
+  </select>
+</div> -->
+
+<div class="container d-flex flex-column justify-content-between" *ngIf="products">
+  <div class="row mb-3">
+    <div class="col-3">
+      <b>Наименование</b>
+    </div>
+    <div class="col-3">
+      <b>Количество</b>
+    </div>
+    <div class="col-3">
+      <b>Статус</b>
+    </div>
+    <div class="col-2">
+    </div>
+  </div>
+
+  <div class="row mb-2" *ngFor="let product of products
+				| sort : sortParam
+				| colorSort
+    " [ngClass]="{'purchased': product.status=='not purchased'}">
+    <div class="col-3">
+      {{ product.name }}
+    </div>
+    <div class="col-3">
+      {{ product.count }}
+    </div>
+    <div class="col-3">
+      <select [value]="product.status" (change)="disableStatus( product.id)">
+        <option value="purchased">Куплено</option>
+        <option value="not purchased">Не куплено</option>
+      </select>
+    </div>
+    <div class="col-3">
+      <button [routerLink]="[ 'edit', product.id ]" class="btn btn-sm btn-primary m-2">Редактировать</button>
+    </div>
+  </div>
+</div>

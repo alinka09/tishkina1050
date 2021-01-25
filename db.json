@@ -1,0 +1,40 @@
+{
+  "catalog": [
+    {
+      "name": "Книги",
+      "count": "23",
+      "status": "not purchased",
+      "id": 1
+    },
+    {
+      "name": "Яблоки",
+      "count": "2",
+      "status": "not purchased",
+      "id": 2
+    },
+    {
+      "name": "Бананы",
+      "count": "4",
+      "status": "purchased",
+      "id": 3
+    },
+    {
+      "name": "Зеркало",
+      "count": "5",
+      "status": "purchased",
+      "id": 4
+    },
+    {
+      "name": "Зонтик",
+      "count": "67",
+      "status": "not purchased",
+      "id": 5
+    },
+    {
+      "name": "Фонарик",
+      "count": "56",
+      "status": "not purchased",
+      "id": 6
+    }
+  ]
+}

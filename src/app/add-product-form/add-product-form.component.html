@@ -1,0 +1,16 @@
+<div class="d-flex flex-column align-items-center">
+  <h3 class="mt-2">Добавление нового товара</h3>
+  <form class="form-horizontal p-2" [formGroup]="productForm" *ngIf="productForm">
+    <div class="form-inline">
+      <div class="form-group">
+        <label for="exampleInputEmail1" class="form-label">Наименование</label>
+        <input type="text" class="form-control" formControlName="name" id="exampleInputEmail1"
+          aria-describedby="emailHelp">
+        <label for="exampleInputEmail1" class="form-label">Количество</label>
+        <input type="text" class="form-control" formControlName="count" id="exampleInputEmail1"
+          aria-describedby="emailHelp">
+      </div>
+      <button class=" btn btn-success mr-4" [disabled]="!productForm.valid" (click)="addProduct()">Добавить</button>
+    </div>
+  </form>
+</div>
