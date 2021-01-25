@@ -44,7 +44,7 @@ export class NewProductDataComponent implements OnInit {
       ),
       count: new FormControl(
         { value: this.product ? this.product.count : '', disabled: false },
-        [Validators.required]
+        [Validators.required, Validators.pattern('[0-9]*')]
       ),
       status: new FormControl(
         {

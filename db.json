@@ -3,44 +3,56 @@
     {
       "name": "Книги",
       "count": "23",
-      "status": "not purchased",
+      "status": "purchased",
       "id": 1
     },
     {
       "name": "Яблоки",
       "count": "2",
-      "status": "not purchased",
+      "status": "purchased",
       "id": 2
     },
     {
       "name": "Бананы",
-      "count": "4",
-      "status": "purchased",
+      "count": "12",
+      "status": "not purchased",
       "id": 3
     },
     {
       "name": "Зеркало",
       "count": "5",
-      "status": "purchased",
+      "status": "not purchased",
       "id": 4
     },
     {
       "name": "Зонтик",
       "count": "67",
-      "status": "purchased",
+      "status": "not purchased",
       "id": 5
     },
     {
       "name": "Фонарик",
       "count": "56",
-      "status": "not purchased",
+      "status": "purchased",
       "id": 6
     },
     {
       "name": "Груши",
-      "count": "34",
+      "count": "12",
       "status": "not purchased",
       "id": 7
+    },
+    {
+      "name": "Вино",
+      "count": "1",
+      "status": "not purchased",
+      "id": 8
+    },
+    {
+      "name": "Цветы",
+      "count": "8",
+      "status": "not purchased",
+      "id": 9
     }
   ]
 }
