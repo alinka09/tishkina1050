@@ -27,7 +27,7 @@
     {
       "name": "Зонтик",
       "count": "67",
-      "status": "not purchased",
+      "status": "purchased",
       "id": 5
     },
     {
@@ -35,6 +35,12 @@
       "count": "56",
       "status": "not purchased",
       "id": 6
+    },
+    {
+      "name": "Груши",
+      "count": "34",
+      "status": "not purchased",
+      "id": 7
     }
   ]
 }
